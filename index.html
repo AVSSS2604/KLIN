@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/splide.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class=" ">
+        <div class="container  ">
+            <div class="fixed-top line-top-progres header_hidden  ">
+                <div class="progress-container  ">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<header  class="sticky-top overflow-hidden  ">
+    <nav>
+        <section  class="header-scroll   ">
+            <div class="container">
+                <div class="row py-lg-4  py-3  ">
+                    <div class="col-6 d-flex justify-content-start ">
+                       <a href=""> <img src="./assets/images/logo.svg" width="64px" alt=""></a>
+                    </div>
+                    <div class="col-6 d-lg-flex  d-none  align-items-center justify-content-end   ">
+                        <a class="d-flex align-item-center a-title-city" href="">
+                            <img src="./assets/images/cursor.svg" width="10px" alt="">
+                            <span class="title-city">Мариуполь</span>
+                        </a>
+                        
+                        <div class="button-header">
+                            <a href="">
+                                <span class="title-bold">+7 (495) 229-30-89</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                
+                
+                    <div class="col-lg-12 col-1  d-flex   pt-3 justify-content-lg-center        ">
+                        <ul class="d-flex flex-lg-row flex-column  align-items-center justify-content-center   mob-menu">
+                            <li class="title-menu"><a href="">УБОРКА</a></li>
+                            <li class="title-menu"><a href="">ХИМЧИСТКА</a></li>
+                            <li class="title-menu"><a href="">КОМПАНИЯ</a></li>
+                            <li class="title-menu"><a href="">ФРАНШИЗА</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 d-lg-none d-flex justify-content-end         align-items-center  overflow-hidden  ">
+                        <a href="javascript:menu()" class="plate plate4 d-flex align-items-center justify-content-center overflow-hidden    " onclick="this.classList.toggle('active')" style="z-index: 99999">
+                            <svg class="burger  overflow-hidden " version="1.1"  width="100" height="100" hviewBox="0 0 100 100">
+                                <path class="line line1" d="M 50,35 H 30"></path>
+                                <path class="line line2" d="M 50,35 H 70"></path>
+                                <path class="line line3" d="M 50,50 H 30"></path>
+                                <path class="line line4" d="M 50,50 H 70"></path>
+                                <path class="line line5" d="M 50,65 H 30"></path>
+                                <path class="line line6" d="M 50,65 H 70"></path>
+                            </svg>
+                            <svg class="x overflow-hidden" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                                <path class="line" d="M 34,32 L 66,68"></path>
+                                <path class="line" d="M 66,32 L 34,68"></path>
+                            </svg>
+                        </a>
+                    
+                    </div>
+                </div>    
+            </div>
+            </div>
+        </section>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div class="container py-3">
+            <div class="row py-lg-5 py-3  g-lg-0 g-3 ">
+                <div class="col-lg-8  col-12 ">
+                    <h1 class="main-title">Клининговая компания в <a  href="/" class="mariupol">Мариуполе</a><img src="./assets/images/cursor.svg" width="24px"  alt=""></h1>
+                </div>
+                <div class="col-lg-4 col-12 ">
+                    <div class="mb-4 ">
+                        <span class="text">Больше не думайте об уборке — ее  <br>сделаем мы
+                        </span>
+                    </div>
+                    <a href="">
+                        <div class="button text-center ">
+                            <span class="title-bold">Позвонить</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="img-main">
+        <div class="container">
+            <div class="row align-items-center    ">
+                <div class="col-12      ">
+                    <form class="form-row for-inline-form  px-3 py-lg-3  py-4  " ">
+                        <div class="row  g-lg-2 g-3 ">
+                        <div class="col-lg-3 col-12  d-flex  ">
+                            <div class="input-group   w-100 h-100   ">
+                                
+                                <select class="custom-select p-2  bg-white text-secondary w-100  " name="home">
+                                    <option value="Квартира" selected="">Квартира</option>
+                                    <option value="Дом">Дом</option>
+                                    <option value="Коммерция">Коммерция</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 ">
+                        <div class="input-group w-100 h-100   ">
+                            
+                            <select class="custom-select w-100 p-2  bg-white text-secondary" name="clean">
+                                <option value="Еженедельная уборка" selected="">Еженедельная уборка</option>
+                                <option value="Генеральная уборка">Генеральная уборка</option>
+                                <option value="Уборка после ремонта">Уборка после ремонта</option>
+                            </select>
+                            
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                        <div class="input-group w-100 h-100   ">
+                            
+                            <input  type="text" name="rooms" class="form-control text-left w-100 " placeholder="Введите площадь  м²" value="">
+                            
+                            
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                        <button type="submit" class="btn btn-form w-100  " style="color:#000;height:calc(3rem + 2px)">Оставить заявку</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5 ">
+            <div class="row py-lg-5 py-0  ">
+                <div class="col-lg-8 col-12">
+                    <ul class="d-flex timer">
+                        <li><span class="big-number-room number-room">6</span></li>
+                        <li><span class="number-room">7</span></li>
+                        <li><span class="number-room">7</span></li>
+                        <li><span class="big-number-room number-room">5</span></li>
+                        <li><span class="number-room">9</span></li>
+                        <li><span class="number-room">7</span></li>
+                        <li><span class="number-room">8</span></li>
+                        <li><span class="text-number">м²</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-12 mt-lg-0  mt-4 ">
+                    <span class="mini-title">Квартир и домов убрано  <br> нашими клинерами</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="security-section">
+        <div class="container py-5 ">
+            <div class="row py-lg-5   py-0 g-lg-0 g-4  ">
+                <div class="col-lg-2 col-12">
+                    <span class="sub-title">С нами  безопасно</span>
+                </div>
+                <div class="col-2  d-lg-flex d-none "></div>
+                <div class="col-lg-8 col-12">
+                    <div class="row row-cols-lg-2 row-cols-1   g-3 ">   
+                        <div class="col   ">
+                            <div class="block-security">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <span class="text">Оплата — после уборки</span>
+                                    </div>
+                                    <div class="col-3 py-4 d-flex justify-content-end  "><img src="./assets/images/credit-card.svg" width="30px" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col   ">
+                            <div class="block-security">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <span class="text">Гарантируем качество уборки</span>
+                                    </div>
+                                    <div class="col-3 py-4 d-flex justify-content-end  "><img src="./assets/images/smile.svg" width="30px" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col   ">
+                            <div class="block-security">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <span class="text">Выполним особые поручения
+                                        </span>
+                                    </div>
+                                    <div class="col-3 py-4 d-flex justify-content-end  "><img src="./assets/images/shopping-cart.svg" width="30px" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col   ">
+                            <div class="block-security">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <span class="text">Работаем с проверенными клинерами
+                                        </span>
+                                    </div>
+                                    <div class="col-3 py-4 d-flex justify-content-end  "><img src="./assets/images/user-check.svg" width="30px" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col   ">
+                            <div class="block-security">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <span class="text">Выезжаем за МКАД
+                                        </span>
+                                    </div>
+                                    <div class="col-3 py-4 d-flex justify-content-end  "><img src="./assets/images/map-pin.svg" width="30px" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col   ">
+                            <div class="block-security">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <span class="text">Выполним уборку день-в-день
+                                        </span>
+                                    </div>
+                                    <div class="col-3 py-4 d-flex justify-content-end  "><img src="./assets/images/calendar.svg" width="30px" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  class="clean">
+        <div class="container">
+            <div class="row  py-5 ">
+                <div class="col-lg-6 col-12  d-flex  justify-content-start ">
+                    <span class="sub-title">Что входит в уборку
+                    </span>
+                </div>
+                <div class="col-lg-6 col-12  d-flex  justify-content-end  ">
+                    <span class="text">Наш клинер приезжает в назначенное <br> время со всем необходимым и сразу приступает к делу.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section  class="section-tab">
+        <div class="container">
+            <div class="row py-4 ">
+                <div class="col-12">
+                    <ul class="nav nav-tabs  d-flex justify-content-start    " id="myTab" role="tablist ">
+                        
+                                <li class="nav-item " role="presentation">
+                                    <button class="nav-link active  w-100" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
+                                        <div class="prod-tab">
+                                            <span class="h8 prod-tab-title ">Быстрая</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link w-100 " id="feature-tab" data-bs-toggle="tab" data-bs-target="#feature" type="button" role="tab" aria-controls="feature" aria-selected="true">
+                                        <div class="prod-tab">
+                                            <span class="h8 prod-tab-title ">Генеральная</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link w-100 " id="Reviews-tab" data-bs-toggle="tab" data-bs-target="#Reviews" type="button" role="tab" aria-controls="Reviews" aria-selected="true">
+                                        <div class="prod-tab">
+                                            <span class="h8 prod-tab-title ">После ремонта</span>
+                                        </div>
+                                    </button>
+                                </li>
+                        </ul>
+                               
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  class="section-open-tab overflow-hidden ">
+        <div class="container py-lg-5 py-3  ">
+        
+                <div class="tab-content mt-lg-4 mt-0 " id="myTabContent">
+                    <div class="tab-pane tap-pan-des fade  show active   " id="description" role="tabpanel" aria-labelledby="description-tab">
+                        <div class="row  g-lg-0 g-5">
+                            <div class="col-lg-6 col-12">
+                                
+                                
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          
+                                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              <span class="mini-title">Комнаты</span>
+                                            </button>
+                                            <div  id="flush-collapseOne" class="accordion-collapse collapse show  " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"">
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">01</span>
+                                                            <span class="title-collapse ">Заправляем кровать</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-1">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">02</span>
+                                                            <span class="title-collapse ">Собираем мусор и меняем мешки</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-2">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              <span class="mini-title">Кухня</span>
+                                            </button>
+                                            <div  id="flush-collapseTwo" class="accordion-collapse collapse  " aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"">
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-2-1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">01</span>
+                                                            <span class="title-collapse ">Заправляем кровать</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-2-1">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-2-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">02</span>
+                                                            <span class="title-collapse ">Собираем мусор и меняем мешки</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-2-2">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>        
+                                
+                        
+                                  
+                            </div>
+                            <div class="col-lg-1 d-lg-flex d-none  "></div>
+                            <div class="col-lg-5 col-12">
+                                <div class="">
+                                    <img  class="img-fluid " src="./assets/images/clean2_desk.png" alt="">
+                                </div>
+                                
+                                    <a href="">
+                                        <div class="button  button-tab-green text-center  mt-4  ">
+                                            <span class="title-bold">Заказать регулярную уборку</span>
+                                        </div>
+                                    </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tap-pan-des fade    " id="feature" role="tabpanel" aria-labelledby="feature-tab">
+                        <div class="row  g-lg-0 g-5">
+                            <div class="col-lg-6 col-12">
+                                
+                                
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          
+                                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              <span class="mini-title">Комнаты</span>
+                                            </button>
+                                            <div  id="flush-collapseOne" class="accordion-collapse collapse show " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"">
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">01</span>
+                                                            <span class="title-collapse ">Заправляем кровать</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-1">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">02</span>
+                                                            <span class="title-collapse ">Собираем мусор и меняем мешки</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-2">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              <span class="mini-title">Кухня</span>
+                                            </button>
+                                            <div  id="flush-collapseTwo" class="accordion-collapse collapse  " aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"">
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-2-1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">01</span>
+                                                            <span class="title-collapse ">Заправляем кровать</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-2-1">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="    collapse-block-first pt-4">
+                                                    <a class="a-deliv" data-bs-toggle="collapse" href="#collapseExample-2-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                
+                                                        <div class=" d-flex">
+                                                        <div class=" d-flex justify-content-lg-start  w-100 ">
+                                                            <span class=" number-collapse">02</span>
+                                                            <span class="title-collapse ">Собираем мусор и меняем мешки</span>
+                                                        </div>
+                                                        <div class=" d-flex justify-content-lg-end
+                                                        justify-content-end  align-items-center  ">
+                                                        <div class="plus">
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="collapse  pt-4 " id="collapseExample-2-2">
+                                                        <span  class="text-collap">Клинер аккуратно заправит кровать: сложит одеяла, встряхнет подушки, застелет пледом или покрывалом. Если вам нужно поменять постельное белье – заранее приготовьте комплект и сообщите оператору о заказе дополнительной услуги.</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>        
+                                
+                        
+                                  
+                            </div>
+                            <div class="col-lg-1 d-lg-flex d-none  "></div>
+                            <div class="col-lg-5 col-12">
+                                <div class="">
+                                    <img  class="img-fluid " src="./assets/images/clean2_desk.png" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tap-pan-des fade    " id="Reviews" role="tabpanel" aria-labelledby="Reviews-tab">
+
+                    </div>
+                </div> 
+            
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row py-5  align-items-center ">
+                <div class="col-lg-6 col-12  ">
+                    <div class="row row-cols-1 g-4    ">
+                        <div class="col">
+                            <span class="sub-title">Узнайте цену по фото <br>
+                                с точностью 99%</span>
+                        </div>
+                        <div class="col">
+                            <span class="title-phone">Пришлите нам фото помещения и комментарии в любой удобный мессенджер, а мы сделаем для вас точный расчет!</span>
+                        </div>
+                        <div class="col d-flex   ">
+                            <div class="row row-cols-lg-2 row-cols-1  g-3  ">
+                                <div class="col ">
+                                    <a href="">
+                                        <div class="button d-flex   ">
+                                            <div class=" text-start  "><img class="img-fluid  " src="./assets/images/telegram.svg" alt=""></div>
+                                            <div class=" text-center w-100    ">
+                                            <span class="title-bold">Telegram    </span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col ">
+                                    <a href="">
+                                        <div class="button d-flex   ">
+                                            <div class=" text-start  "><img class="img-fluid  " src="./assets/images/whatsapp.svg" alt=""></div>
+                                            <div class=" text-center w-100    ">
+                                            <span class="title-bold">WhatsApp</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col ">
+                                    <a href="">
+                                        <div class="button d-flex   ">
+                                            <div class=" text-start  "><img class="img-fluid  " src="./assets/images/vk2.svg" alt=""></div>
+                                            <div class=" text-center w-100    ">
+                                            <span class="title-bold">Вконтакте   </span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col ">
+                                    <a href="">
+                                        <div class="button d-flex   ">
+                                            <div class=" text-start  "><img class="img-fluid  " src="./assets/images/icon_calculator.svg" alt=""></div>
+                                            <div class=" text-center w-100    ">
+                                            <span class="title-bold">
+                                            Онлайн-расчёт</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-1 d-lg-flex d-none "></div>
+                <div class="col-lg-5 col-12 mt-lg-0 mt-3  ">
+                    <img class="img-fluid " src="./assets/images/price_by_photo_ru.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container  py-5 ">
+            <div class="row g-4 py-lg-5   py-0  ">
+                <div class="col-12">
+                    <span class="sub-title">Навели порядок уже в 13029  квартирах в Мариуполе
+                    </span>
+                </div>
+                <div class="col-12">
+                    <div class="" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10366/mariupol/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Мариуполь</a><a href="https://yandex.ru/maps/10366/mariupol/?ll=37.541443%2C47.096702&utm_medium=mapframe&utm_source=maps&z=12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Мариуполь — Яндекс Карты</a><iframe class="w-100 map-mariupol " src="https://yandex.ru/map-widget/v1/?ll=37.541443%2C47.096702&z=12" width="560" height="700" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <section  class="section-footer">
+        <div class="container pb-lg-0 pb-5  ">
+            <div class="row  row-cols-lg-2 row-cols-1  py-lg-5 py-4 g-lg-0 g-4  ">
+                <div class="col">
+                    <div class=" mb-4"><span class="title-phone title-footer  ">О нас</span></div>
+                    <ul>
+                        <li class="text footer-li"><a href="">Уборка</a></li>
+                        <li class="text footer-li"><a href="">Химчистка</a></li>
+                        <li class="text footer-li"><a href="">Компания</a></li>
+                        <li class="text footer-li"><a href="">Франшиза</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <span class="mini-title">Никаких роботов – задайте вопрос и получите быстрый ответ от человека</span>
+                    </div>
+                    <div class="row row-cols-lg-2 row-cols-1    g-3 pt-lg-2  pt-4 ">
+                        <div class="col ">
+                            <a href="">
+                                <div class="button d-flex   ">
+                                    <div class=" text-start  "><img class="img-fluid  " src="./assets/images/telegram.svg" alt=""></div>
+                                    <div class=" text-center w-100    ">
+                                    <span class="title-bold">Telegram    </span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="">
+                                <div class="button d-flex   ">
+                                    <div class=" text-start  "><img class="img-fluid  " src="./assets/images/whatsapp.svg" alt=""></div>
+                                    <div class=" text-center w-100    ">
+                                    <span class="title-bold">WhatsApp</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="">
+                                <div class="button d-flex   ">
+                                    <div class=" text-start  "><img class="img-fluid  " src="./assets/images/vk2.svg" alt=""></div>
+                                    <div class=" text-center w-100    ">
+                                    <span class="title-bold">Вконтакте   </span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="  mt-4 mb-lg-0 mb-5 ">
+                        
+                        <a class="d-flex align-item-center a-title-city" href="">
+                            
+                            <span class="title-city  title-city-footer">Мариуполь</span>
+                            <img src="./assets/images/cursor.svg" width="10px" alt="">
+                        </a>
+                        <a href="">
+                            <span   class="mini-title">+7 (495) 229-30-89</span>
+                        </a>
+                        <div class=""><span>Ежедневно с 09:00 до 21:00</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<section class="fixed-bottom pb-lg-4 pb-3  px-lg-0 px-2 ">
+    <div class="container">
+        <div class="row">
+            <div class="block-scroll">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-2   col-6  p-0 ">
+                            <a href="">
+                                <div class="button text-center button-fixed-menu ">
+                                    <span class="title-bold">Заказать уборку</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-8 d-lg-flex d-none  "></div>
+                        <div class="col-lg-2  col-6  d-flex align-items-center justify-content-end ">
+                            <div class="icon-fixed-menu">
+                                <a href="">
+                                    <img src="./assets/images/telegram-color.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="icon-fixed-menu">
+                                <a href="">
+                                    <img src="./assets/images/whatsapp-color.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="icon-fixed-menu">
+                                <a href="">
+                                    <img src="./assets/images/phone-color.svg" alt="">
+                                </a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    <script src="./assets/js/splide.min.js"></script>
+    <script src="./assets/js/splide-extension-auto-scroll.min.js"></script>
+    <script>let splide_1 = new Splide( '.splide_1', {
+        type   : 'loop',
+        gap: '3rem',
+        perPage: 2,
+        perMove: 1,
+        padding: '1em',
+        
+        arrows: false,
+        
+        
+        
+        breakpoints: {
+                1200:{
+                    perPage: 2,
+                    gap: '3rem'
+                },
+                900:{
+                    perPage: 1,
+                    gap: '3rem'
+                },
+                490:{
+                    perPage: 1,
+                    gap: '3rem',
+                    
+                }
+            }
+      } );
+      
+      splide_1.mount();
+      </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+<script>
+SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime    : 500,
+    // Размер шага в пикселях 
+    stepSize         : 75,
+
+    // Дополнительные настройки:
+    
+    // Ускорение 
+    accelerationDelta : 30,  
+    // Максимальное ускорение
+    accelerationMax   : 2,   
+
+    // Поддержка клавиатуры
+    keyboardSupport   : true,  
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll       : 50,
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
+
+    // Поддержка тачпада
+    touchpadSupport   : true,
+})
+</script>
+<script>
+ 
+</script>
+    
+        
+    
+      
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.2/imask.min.js" integrity="sha512-l0grYOI8XZga5TajPOiqLrQVCKrdh+k0QSEtS+cpJlNeI8Nu9GOhsVaFyFQuPQfYp02GnhsyHqkPR7P7BTKYAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./assets/js/wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script>
+      
+      
+    
+    <script>
+    
+    document.querySelector('.form').addEventListener('submit',  function(e){
+    
+            e.preventDefault();
+                         Swal.fire({
+                            toast : true,
+                            icon : 'success',
+                            position : 'center',
+                            title : 'Заявка принята. Спасибо!',
+                            timer: 3200,
+                            timerProgressBar: true,
+                            showConfirmButton: false,
+                            background:'#424242',
+                            color:'white',
+                            
+                        })
+                        e.target.reset()
+                       
+                })
+      
+        
+    
+    </script>
+    <script>
+         let parallax = document.querySelector('.lamp')
+      parallax.style.backgroundPositionY =  scrollTop/2.5 + "px";
+    </script>
+    <script>
+        // Когда пользователь прокручивает страницу, выполните myFunction
+       window.onscroll = function() {myFunction()};
+       
+       function myFunction() {
+         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+         var scrolled = (winScroll / height) * 100;
+         document.getElementById("myBar").style.width = scrolled + "%";
+       }
+       </script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    
+    
+    <script src="./assets/js/index.js"></script>
+    </body>
+    </html>  

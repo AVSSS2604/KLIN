@@ -1,0 +1,541 @@
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url(/assets/fonts/Gerbera/Gerbera.ttf) ;
+    font-weight: 400;
+}
+
+body{
+    font-family:var(--Ger) ;
+    background-color: var(--bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+}
+
+
+:root {
+    --bg: #FFFFFF;
+    --turq: #9bf0f5;
+    --green: #7be19c;
+    --white: #FFFFFF;
+    --gray:#555555;
+    --black:#333;
+    --history:#f0e7e4;
+    --white-gray:#8d8d8c;
+    --collap:#1aa5b8;
+    --text-collap:#767575;
+
+    --Ger:'Gerbera';
+}
+
+
+a{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    color: var(--black);
+    transition: all .2s ease-in-out;
+}
+a:hover{
+    color:var(--black) ;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+.btn{
+    border: 2px solid var(--gold); 
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    transition: all .8s ease-in-out;
+    border-radius: 0;
+}
+.btn:hover
+ {
+    box-shadow: inset 22em 0 0 0 var(--gold);
+    color: var(--bg);
+    transition: all .8s ease-in-out;
+}
+header{
+    background-color: var(--bg);
+}
+.title-city{
+    margin-left: 4px;
+    font-size: 14px;
+}
+.a-title-city:hover{
+    color: var(--black);
+}
+.button-header{
+    margin-left: 28px;
+    background-color: var(--turq);
+    padding: 10px 20px;
+    border-radius: 60px;
+}
+.title-bold{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-menu{
+    margin-right: 40px;
+    letter-spacing: .1em;
+    font-size: 16px;
+    text-transform: uppercase;
+   
+}
+.title-menu a{
+    color: rgba(128, 128, 128, 0.746);
+}
+.title-menu a:hover{
+    color: var(--black);
+}
+.header-scroll{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.08);
+}
+.main-title{
+    font-size: 52px;
+}
+.button{
+    background-color: var(--turq);
+    padding: 10px 20px;
+    border-radius: 60px;
+}
+.text{
+    font-size: 18px;
+}
+.img-main{
+        background-image: url(../images/main.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: 500px;
+}
+.number-room{
+    font-size: 52px;
+    background-color: rgba(128, 128, 128, 0.209);
+    padding: 6px 14px;
+    border-radius:4px ;
+}
+.timer li{
+    margin-right: 10px;
+}
+.timer li .big-number-room{
+    margin-right: 10px;
+}
+.text-number{
+    font-size: 52px;
+}
+.mini-title{
+    font-size: 28px;
+}
+.sub-title{
+    font-size: 38px;
+}
+.security-section{
+    background-color: rgba(128, 128, 128, 0.209);
+}
+.block-security{
+    background-color: var(--bg);
+    border-radius: 12px;
+    padding: 20px ;
+}
+.title-phone{
+    font-size: 20px;
+}
+.mariupol{
+text-decoration: underline;
+margin-right: 10px;
+}
+.clean{
+    border-bottom: 2px solid  rgba(128, 128, 128, 0.209);
+}
+.section-footer{
+    border-top: 2px solid  rgba(128, 128, 128, 0.209);
+}
+.title-footer{
+    color:rgba(128, 128, 128, 0.746) ;
+}
+.footer-li{
+    margin-top: 8px;
+}
+.title-city-footer{
+    margin-right: 6px;
+    font-size: 15px;
+}
+.block-scroll{
+    background-color: var(--bg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 60px;
+}
+.button-fixed-menu{
+    padding: 15px  20px;
+}
+.icon-fixed-menu{
+    margin-left: 10px;
+}
+.for-inline-form{
+    background-color:#fff;
+    border-radius:40px;
+    margin-top: 230px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.08);
+}
+.input-group{
+    
+}    
+.custom-select{
+    border: 2px solid rgba(128, 128, 128, 0.209) ;
+    border-radius: 30px;
+}
+.form-control{
+    border: 2px solid rgba(128, 128, 128, 0.209) ;
+    border-radius: 30px;
+}
+.btn-form{
+    background-color: var(--turq);
+    border-radius: 30px;
+}
+input:active, :hover, :focus {
+    outline: none ;
+    outline-offset: 0;
+}
+.form-control:focus{
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.209) ;
+    box-shadow: none;
+}
+.custom-select:hover{
+    cursor: pointer;
+}
+.button-tab-green{
+    background-color: var(--green);
+}
+
+.section-open-tab{
+    background-color: rgba(128, 128, 128, 0.209);
+}
+.plus span {
+    transition: all .3s linear;
+    width: 15px;
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--black);
+}
+.plus {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-right: 20px;
+}
+.plus span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.a-deliv[aria-expanded="true"] .plus span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+.a-deliv[aria-expanded="false"] .plus span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.collapse .show  .dev-plus{
+    display: none;
+}
+.collapse-block-first{
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.251);
+}
+.number-collapse{
+    color: var(--collap);
+    font-size: 16px;
+    margin-right: 10px;
+}
+.title-collapse{
+    text-decoration: underline;
+    font-size: 16px;
+}
+.text-collap{
+    font-size: 15px;
+    color: var(--text-collap);
+}
+.accordion-button{
+    background: rgba(128, 128, 128, 0.209);
+     border-bottom: 1px solid  rgba(128, 128, 128, 0.251);
+}
+.accordion-collapse{
+    background: rgba(128, 128, 128, 0.209);
+}
+.accordion-button:not(.collapsed) {
+    color: var(--black);
+    background-color: rgba(128, 128, 128, 0.209);
+    box-shadow: none;
+}
+.accordion-button:focus {
+    z-index: 3;
+     border-color: rgba(128, 128, 128, 0.251); 
+     outline: 0; 
+     box-shadow: none; 
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/fly.svg);
+    transform: rotate(-180deg);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-bottom: 1px solid var(--black);
+}
+.nav-tabs  .nav-link {
+    border: none;
+}
+.nav-tabs .nav-link:focus .nav-tabs .nav-link:hover {
+    border-bottom: 1px solid var(--black);
+}
+.nav-tabs .nav-link.active:hover{
+    border-bottom: 1px solid var(--black);
+}
+
+.nav-tabs{
+    border: none;
+}
+.nav-link {
+    
+    color: rgba(128, 128, 128, 0.746);
+    
+    
+}
+.nav-link:hover {
+    
+    color: rgba(128, 128, 128, 0.746);
+    
+    
+}
+.nav-item .active {
+    
+    color: rgba(128, 128, 128, 0.746);
+    border-bottom: 1px  solid  var(--black);
+    
+}
+
+
+
+
+
+
+
+
+
+/* Контейнер прогресса (серый фон) */
+.progress-container {
+    width: 100%;
+    height: 3px;
+}
+  /* Индикатор прогресса (индикатор прокрутки) */
+.progress-bar {
+    height: 3px;
+    background: var(--turq);
+    width: 0%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--turq); 
+    border-radius: 10px;
+}
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+.time-text-footer{
+    color: var(--gold);
+}
+input[type='time']::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+ input:-webkit-autofill,
+ input:-webkit-autofill:hover,
+ input:-webkit-autofill:focus,
+ input:-webkit-autofill:active {
+    -webkit-transition-delay: 99999s;
+}
+
+
+
+
+
+
+
+
+@media(max-width:992px){
+    .menubtn {
+        margin-right: 10px;
+       font-size: 1.2rem;
+       transition: all .3s ease-in-out;
+       z-index: 1000;
+     }
+     .mob-menu{
+       transition: all .3s ease-in-out;
+       background-color: rgba(128, 128, 128, 0.800) ;
+       position: fixed;
+       left: 0;
+       top: 0;
+       z-index:900 ;
+       transform: translateX(-100%);
+       overflow: scroll;
+       width: 100%;
+       height: 100%;
+       margin-top:  75px;
+       
+     }
+     body.show-menu .menubtn {
+       transform: rotate(90deg);
+     }
+     body.show-menu .mob-menu {
+       transform: translateX(0%); 
+     }
+     body.show-menu  {
+       overflow: hidden;
+     }
+    .main-title{
+        font-size:33px ;
+    }
+    .map-mariupol{
+        height: 400px;
+    }
+    .number-room{
+        font-size: 24px;
+        background-color: rgba(128, 128, 128, 0.209);
+        padding: 6px 10px;
+        border-radius:4px ;
+    }
+    .timer li{
+        margin-right: 6px;
+    }
+    .timer li .big-number-room{
+        margin-right: 6px;
+    }
+    .text-number{
+        font-size:24px;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+
+    .plate .line {
+        transition: all .3s linear;
+        fill: none;
+        stroke: var(--black);
+        stroke-width: 3px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transform-origin: 50%;
+        transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+    
+    }
+    .x {
+        transform: scale(0);
+        transition: transform 400ms;
+    }
+    .x .line {
+        stroke-width:4px;
+    }
+    /* Die vierte teller */
+.plate svg {
+    min-height: max-content;
+    position: absolute;
+    min-width: max-content;
+   
+}
+.plate4 .x {
+    transition: all 300ms;
+}
+
+.line6 {
+    display: none;
+}
+
+.plate4 .line {
+    transform-origin: 50%;
+    transition: transform 400ms 100ms;
+}
+
+.active.plate4 .line {
+    transition: transform 400ms;
+}
+
+.active.plate4 .line1 {
+    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+}
+
+.active.plate4 .line2 {
+    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+}
+
+.active.plate4 .line3 {
+    transform: translateY(0px) rotate(45deg) scale(.7);
+}
+
+.active.plate4 .line4 {
+    transform: translateY(0px) rotate(-45deg) scale(.7);
+}
+
+.active.plate4 .line5 {
+    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+}
+
+.active.plate4 .line6 {
+    display: block;
+    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+}
+
+.active.plate4 .x {
+    transition: transform 400ms 100ms;
+    transform: scale(.75);
+}
+.plate {
+    height: 50px;
+    aspect-ratio: 1/1;
+}
+
+    .title-menu a  {
+        color: var(--black);
+        font-size: 21px;
+        
+    }
+    .title-menu{
+        margin-right: 0px;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+    .for-inline-form{
+        margin-top: 200px;
+        
+    }
+    .nav-link {
+       
+        padding: 5px   12px;
+        
+    }
+
+}
+@media(max-width:420px){
+    .title{
+        font-size: 28px;
+    }
+}
